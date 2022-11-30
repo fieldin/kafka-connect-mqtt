@@ -14,7 +14,7 @@ Note:
 
 To build the connector, you must have the following installed:
 
-* Java 8 or later
+* Java 11 or later
 * Maven
 * GIT
 
