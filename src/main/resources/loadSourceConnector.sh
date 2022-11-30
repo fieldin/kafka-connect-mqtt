@@ -11,7 +11,7 @@ curl -X POST \
       "mqtt.broker":"tcp://127.0.0.1:1883",
       "key.converter":"org.apache.kafka.connect.storage.StringConverter",
       "key.converter.schemas.enable":"false",
-      "value.converter":"org.apache.kafka.connect.storage.ByteArrayConverter",
+      "value.converter":"org.apache.kafka.connect.converters.ByteArrayConverter",
       "value.converter.schemas.enable":"false"
     }
 }'
