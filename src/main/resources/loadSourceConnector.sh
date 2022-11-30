@@ -1,7 +1,7 @@
 curl -X POST \
   http://<kafkaconnect>:8083/connectors \
   -H 'Content-Type: application/json' \
-  -d '{ "name": "mqtt-source-connector",
+  -d '{ "name": "kafka-connect-mqtt",
     "config":
     {
       "connector.class":"be.jovacon.kafka.connect.MQTTSourceConnector",
