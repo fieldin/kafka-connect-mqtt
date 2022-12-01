@@ -1,5 +1,5 @@
 curl -X POST \
-  http://<kafkaconnect>>:8083/connectors \
+  http://<kafkaconnect>>:8086/connectors \
   -H 'Content-Type: application/json' \
   -d '{ "name": "mqtt-sink-connector",
     "config":

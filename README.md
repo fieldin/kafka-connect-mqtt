@@ -44,7 +44,7 @@ You must have Kafka 2+ installed
 * Check if the connector has been loaded succesfully
 
 ```
-http://<kafkaconnect>:8083/connector-plugins
+http://<kafkaconnect>:8086/connector-plugins
 ```
 If you see these entries, the connector has been installed succesfully
 
@@ -68,7 +68,7 @@ The MQTT Source connector subscribes to a Topic on a MQTT Broker and sends the m
 Here is a basic configuration example:
 ```
 curl -X POST \
-  http://<kafkaconnect>:8083/connectors \
+  http://<kafkaconnect>:8086/connectors \
   -H 'Content-Type: application/json' \
   -d '{ "name": "mqtt-source-connector",
     "config":
@@ -101,7 +101,7 @@ The MQTT Sink Connector reads messages from a Kafka topic and publishes them to 
 Here is a basic configuration example:
 ```
 curl -X POST \
-  http://<kafkaconnect>>:8083/connectors \
+  http://<kafkaconnect>>:8086/connectors \
   -H 'Content-Type: application/json' \
   -d '{ "name": "mqtt-sink-connector",
     "config":
